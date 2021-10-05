@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   plugins: [
     {
@@ -10,7 +14,6 @@ module.exports = {
     },
     'gatsby-plugin-top-layout',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
     'gatsby-plugin-mui-emotion',
   ],
 };
