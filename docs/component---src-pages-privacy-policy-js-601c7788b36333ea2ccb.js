@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby=self.webpackChunkgatsby||[]).push([[713],{19909:function(e,t,a){a.r(t),a.d(t,{default:function(){return l}});var n=a(67294),r=a(32158),c=a(35414);function l(){return n.createElement(n.Fragment,null,n.createElement(c.q,{title:"Reff.ly | Privacy Policy",defer:!1}),n.createElement(r.Z,{my:30,align:"center",variant:"h4"},"Privacy Policy will goes here, please check back later."))}}}]);
+//# sourceMappingURL=component---src-pages-privacy-policy-js-601c7788b36333ea2ccb.js.map
