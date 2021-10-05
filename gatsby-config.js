@@ -1,12 +1,16 @@
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA4_CODE,
+        enableWebVitalsTracking: true,
+        pageTransitionDelay: 0,
+      },
+    },
     'gatsby-plugin-top-layout',
     'gatsby-plugin-react-helmet',
-    // If you want to use styled components you should add the plugin here.
-    // 'gatsby-plugin-styled-components',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-mui-emotion',
   ],
-  siteMetadata: {
-    title: 'My page',
-  },
 };
