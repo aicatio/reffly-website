@@ -7,7 +7,7 @@ export default function About() {
     <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Error 404
+          Error 404 - Not found
         </Typography>
       </Box>
     </Container>

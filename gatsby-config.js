@@ -15,5 +15,9 @@ module.exports = {
     'gatsby-plugin-top-layout',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-mui-emotion',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-postcss',
+    /** This plugin must be the last plugin witch work with CSS */
+    'gatsby-plugin-mini-css-class-name',
   ],
 };

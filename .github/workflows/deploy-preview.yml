@@ -1,0 +1,14 @@
+name: Deploy Preview
+on:
+  push:
+    branches:
+      - deploy/preview
+jobs:
+  lint_code:
+    runs-on: ubuntu-latest
+    name: Deploy Previews
+    steps:
+      - name: Deploy CF Pages
+        uses: dkershner6/post-api-call-action@v1
+        with:
+          url: ${{ secrets.CF_PREVIEW_TRIGGER }}

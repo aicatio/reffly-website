@@ -1,0 +1,24 @@
+name: Deploy Staging
+on:
+  push:
+    branches:
+      - deploy/staging
+jobs:
+  lint_code:
+    runs-on: ubuntu-latest
+    name: Deploy Previews
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Deploy Netlify
+        uses: South-Paw/action-netlify-deploy@v1.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          build-dir: './deploy'
+          comment-on-commit: true
+      - name: Deploy CF Pages
+        uses: dkershner6/post-api-call-action@v1
+        with:
+          url: ${{ secrets.CF_PREVIEW_TRIGGER }}

@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby=self.webpackChunkgatsby||[]).push([[815],{50454:function(e,t,n){n.r(t),n.d(t,{default:function(){return l}});var r=n(32158),a=n(67294),c=n(35414);function l(){return a.createElement(a.Fragment,null,a.createElement(c.q,{title:"Reff.ly | Terms & Conditions of service",defer:!1}),a.createElement(r.Z,{my:30,align:"center",variant:"h4"},"Terms & Conditions of service will goes here, please check back later."))}}}]);
-//# sourceMappingURL=component---src-pages-terms-and-conditions-js-e902cd7e44eea9f36829.js.map

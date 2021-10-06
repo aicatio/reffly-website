@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby=self.webpackChunkgatsby||[]).push([[678],{97704:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});var r=n(67294),l=n(81003),u=n(35414);function a(){return r.createElement(r.Fragment,null,r.createElement(u.q,{title:"Reff.ly | Open source Url shortening service",defer:!1}),r.createElement(l.Homepage,null))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-ace251604cc6b5164625.js.map

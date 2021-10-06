@@ -1,0 +1,14 @@
+name: Deploy Live
+on:
+  push:
+    branches:
+      - deploy/production
+jobs:
+  lint_code:
+    runs-on: ubuntu-latest
+    name: Deploy Live
+    steps:
+      - name: Deploy Production
+        uses: dkershner6/post-api-call-action@v1
+        with:
+          url: ${{ secrets.CF_PRODUCTION_TRIGGER }}
