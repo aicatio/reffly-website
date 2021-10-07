@@ -9,7 +9,7 @@
     "build": "gatsby build",
     "postbuild": "rm -rf deploy && cp -R public deploy",
     "copyimgs": "cp -R node_modules/@aicat/reffly/build/static/images static/images",
-    "cleantmp": "rm -rf static/images .cache",
+    "cleantmp": "rm -rf static/images .cache public",
     "serve": "gatsby serve"
   },
   "dependencies": {
