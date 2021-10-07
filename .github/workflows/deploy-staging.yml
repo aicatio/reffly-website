@@ -18,7 +18,3 @@ jobs:
           netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
           build-dir: './deploy'
           comment-on-commit: true
-      - name: Deploy CF Pages
-        uses: dkershner6/post-api-call-action@v1
-        with:
-          url: ${{ secrets.CF_PREVIEW_TRIGGER }}
