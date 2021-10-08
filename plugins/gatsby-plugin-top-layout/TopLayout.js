@@ -4,8 +4,13 @@ import { Helmet } from 'react-helmet';
 import { Provider } from 'react-redux';
 
 import { Layout, store } from '@aicat/reffly/build/web';
+import { ribbonCorner } from 'ribbon-corner';
 
 export default function TopLayout({ children }) {
+  ribbonCorner({
+    backgroundColor: '#67C23A',
+    text: 'TEST MODE',
+  });
   return (
     <React.Fragment>
       <Helmet>
