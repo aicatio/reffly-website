@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { Provider } from 'react-redux';
 
 import { Layout, store } from '@aicat/reffly/build/web';
+import TestmodeRibbon from '../../src/comps/TestmodeRibbon';
 
 export default function TopLayout({ children }) {
   return (
@@ -19,8 +20,10 @@ export default function TopLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap"
           rel="stylesheet"
         />
+        <link href="/styles/ribbon.css" rel="stylesheet" />
       </Helmet>
       <Provider store={store}>
+        <TestmodeRibbon />
         <Layout>{children}</Layout>
       </Provider>
     </React.Fragment>
