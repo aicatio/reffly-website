@@ -8,12 +8,13 @@
     "prebuild": "run-s cleantmp copyimgs",
     "build": "gatsby build",
     "postbuild": "rm -rf deploy && cp -R public deploy",
-    "copyimgs": "cp -R node_modules/@aicat/reffly/build/static/images static/images",
+    "copyimgs": "cp -R node_modules/@aicat/reffly/static/images static/images",
     "cleantmp": "rm -rf static/images .cache public",
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "@aicat/reffly": "^1.0.5",
+    "@aicat/reffly": "^1.0.10",
+    "@babel/preset-react": "^7.14.5",
     "@emotion/react": "^11.4.1",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.3.0",
@@ -30,5 +31,9 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-script-hook": "^1.5.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.14.5",
+    "babel-plugin-root-import": "^6.6.0"
   }
 }

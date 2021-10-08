@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { Provider } from 'react-redux';
 
-import { Layout, store } from '@aicat/reffly/build/web';
+import { Layout, store } from '@aicat/reffly/web';
 import TestmodeRibbon from '../../src/comps/TestmodeRibbon';
 
 export default function TopLayout({ children }) {

@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/@aicat%2Freffly.svg)](https://badge.fury.io/js/@aicat%2Freffly)
+![NPM version](https://badge.fury.io/js/@aicat%2Freffly.svg)
 ![Deploy Live](https://github.com/aicatio/reffly-website/actions/workflows/deploy-live.yml/badge.svg)
 ![Deploy Staging](https://github.com/aicatio/reffly-website/actions/workflows/deploy-staging.yml/badge.svg)
 
