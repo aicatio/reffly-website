@@ -4,9 +4,19 @@
  * --------------------------------
  */
 
-console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
+const getApi_url = () => {
+  if (typeof window != 'undefined') {
+    if (window.location.hostname == 'localhost') {
+      // return 'http://localhost:8103';
+      return 'https://api-staging.reff.ly';
+    }
+    if (window.location.hostname == 'staging.reff.ly') {
+      return 'https://api-staging.reff.ly';
+    }
+  }
+  return 'https://api.reff.ly';
+};
 
 export default {
-  url_api: 'https://reff.ly/api',
-  ga4_code: 'G-GQ3MDNS5Y2',
+  url_api: getApi_url(),
 };
