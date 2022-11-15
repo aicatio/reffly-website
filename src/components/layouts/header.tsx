@@ -31,7 +31,7 @@ const SocialLink = ({ icon: Icon, ping, link }: SocialLinkProps) => {
       href={link}
       className="relative h-10 w-10 text-white place-items-center grid ml-3 rounded-md bg-dark"
     >
-      <Icon size={25} />
+      <Icon size={32} />
       {ping && (
         <span className="flex h-3 w-3 absolute right-0 bottom-0">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>

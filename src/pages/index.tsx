@@ -7,8 +7,8 @@ import UrlShortnerForm from "../components/urlShortnerForm";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <Banner />
-      <UrlShortnerForm className="my-12" />
+      <Banner className="mt-10" />
+      <UrlShortnerForm className="mt-16" />
     </Layout>
   );
 };

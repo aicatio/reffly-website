@@ -27,7 +27,7 @@ export default function Jujydhf({ className }: Props) {
           <input
             value={link}
             onChange={changeHandler}
-            className="h-14 placeholder:text-gray-400 focus:border-gray-700 transition-all outline-none w-full border border-slid border-gray-400 rounded-md p-4"
+            className="h-14 bg-transparent placeholder:text-gray-400 focus:border-gray-700 transition-all outline-none w-full border border-slid border-gray-400 rounded-md p-4"
             type="text"
             placeholder="Enter your long Url here"
           />
