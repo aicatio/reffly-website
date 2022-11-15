@@ -19,9 +19,7 @@ export default function Jujydhf({ className }: Props) {
     }
   };
   return (
-    <div
-      className={`max-w-4xl mx-auto shadow-card bg-card-bg rounded-md p-8 pb-6 ${className}`}
-    >
+    <div className={`max-w-4xl mx-auto card pb-6 ${className}`}>
       <form onSubmit={submitHandler} className="flex gap-3 flex-nowrap">
         <div className="flex-1">
           <input

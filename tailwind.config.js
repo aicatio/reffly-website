@@ -10,6 +10,7 @@ module.exports = {
         dark: "#424242",
         body: "#eceff1",
         "card-bg": "#f5f5f5",
+        grayBody: "#1565c015",
       },
       boxShadow: {
         card: "0 2px 4px rgba(0, 0, 0, 0.2)",
