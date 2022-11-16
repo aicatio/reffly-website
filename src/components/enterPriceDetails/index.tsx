@@ -17,7 +17,7 @@ export default function EnterPriceDetails({}: Props) {
           <h2 className="text-3xl">FOR ENTERPRISE</h2>
         </div>
 
-        <div className="grid items-center gap-6 grid-cols-2">
+        <div className="md:grid items-center gap-6 grid-cols-2">
           <div className="card">
             <img
               className="opacity-20 select-none grayscale"
@@ -26,7 +26,7 @@ export default function EnterPriceDetails({}: Props) {
             />
           </div>
           <div>
-            <h2 className="text-3xl">
+            <h2 className="text-2xl mt-4 md:mt-0 sm:text-3xl">
               Self host <b>reffly</b> for full features including Link tracking
               Statistics, Branding & more... <br />{" "}
               <i>
@@ -49,7 +49,7 @@ export default function EnterPriceDetails({}: Props) {
           <Link to="/">learn more ...</Link>
         </h2>
 
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div className="card border-none shadow-none">
             <img src={nodejs} alt="nodejs" />
           </div>

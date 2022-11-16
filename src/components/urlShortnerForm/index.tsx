@@ -20,7 +20,7 @@ export default function Jujydhf({ className }: Props) {
   };
   return (
     <div className={`max-w-4xl mx-auto card pb-6 ${className}`}>
-      <form onSubmit={submitHandler} className="flex gap-3 flex-nowrap">
+      <form onSubmit={submitHandler} className="md:flex gap-3 flex-nowrap">
         <div className="flex-1">
           <input
             value={link}
@@ -36,7 +36,7 @@ export default function Jujydhf({ className }: Props) {
 
         <button
           type="submit"
-          className="w-40 h-14 bg-dark text-white rounded-md uppercase text-base font-semibold"
+          className="w-full md:w-40 h-14 bg-dark text-white rounded-md uppercase text-base font-semibold"
         >
           shorten
         </button>

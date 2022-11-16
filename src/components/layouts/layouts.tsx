@@ -10,7 +10,7 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <>
-      <div className="select-none uppercase fixed -left-[50px] top-[25px] -rotate-45 bg-red-500 text-white py-4 w-[210px] text-center font-semibold">
+      <div className="select-none uppercase fixed -left-[65px] top-[17px] md:-left-[50px] md:top-[25px] -rotate-45 bg-red-500 text-white py-4 w-[210px] text-center font-semibold text-sm md:text-base">
         Test Mode
       </div>
       <Header />

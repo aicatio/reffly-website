@@ -10,8 +10,8 @@ export default function FooterBottom({}: Props) {
   return (
     <div className="border-t border-solid border-dark py-4">
       <div className="container mx-auto">
-        <div className="grid grid-cols-3 gap-6">
-          <div className="flex items-center gap-2">
+        <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-6">
+          <div className="flex justify-center md:justify-left items-center gap-2">
             Made with
             <svg
               width={30}
@@ -32,7 +32,7 @@ export default function FooterBottom({}: Props) {
             <Link to="/privacy-policy">Privacy</Link>
           </div>
           <div>
-            <div className="flex justify-end items-center gap-4">
+            <div className="flex justify-center md:justify-end items-center gap-4">
               <a href="#">
                 <AiFillGithub size={20} />
               </a>
