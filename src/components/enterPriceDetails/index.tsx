@@ -1,11 +1,6 @@
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import heroku from "../../assets/heroku-v2.svg";
-import mongodb from "../../assets/mongodb-v1.svg";
-import nginx from "../../assets/nginx-v1.svg";
-import nicechartjs from "../../assets/nicechartjs-v1.png";
-import nodejs from "../../assets/nodejs-v2.svg";
-import refflyplusLogo from "../../assets/refflyplus-logo-v1.svg";
 
 type Props = {};
 
@@ -19,10 +14,12 @@ export default function EnterPriceDetails({}: Props) {
 
         <div className="md:grid items-center gap-6 grid-cols-2">
           <div className="card">
-            <img
+            <StaticImage
               className="opacity-20 select-none grayscale"
-              src={nicechartjs}
-              alt=""
+              alt="nicechartjs"
+              placeholder="blurred"
+              layout="constrained"
+              src="../../assets/nicechartjs-v1.png"
             />
           </div>
           <div>
@@ -34,10 +31,13 @@ export default function EnterPriceDetails({}: Props) {
               </i>
             </h2>
             <a href="#">
-              <img
-                className="mt-10 max-w-[200px]"
-                src={refflyplusLogo}
-                alt=""
+              <StaticImage
+                className="mt-10"
+                alt="refflyplusLogo"
+                placeholder="blurred"
+                layout="constrained"
+                src="../../assets/refflyplus-logo-v1.svg"
+                width={200}
               />
             </a>
           </div>
@@ -51,16 +51,36 @@ export default function EnterPriceDetails({}: Props) {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div className="card border-none shadow-none">
-            <img src={nodejs} alt="nodejs" />
+            <StaticImage
+              alt="nodejs"
+              placeholder="blurred"
+              layout="constrained"
+              src="../../assets/nodejs-v2.svg"
+            />
           </div>
           <div className="card border-none shadow-none">
-            <img src={mongodb} alt="mongodb" />
+            <StaticImage
+              alt="heroku"
+              placeholder="blurred"
+              layout="constrained"
+              src="../../assets/heroku-v2.svg"
+            />
           </div>
           <div className="card border-none shadow-none">
-            <img src={nginx} alt="nginx" />
+            <StaticImage
+              alt="mongodb"
+              placeholder="blurred"
+              layout="constrained"
+              src="../../assets/mongodb-v1.svg"
+            />
           </div>
           <div className="card border-none shadow-none">
-            <img src={heroku} alt="heroku" />
+            <StaticImage
+              alt="nginx"
+              placeholder="blurred"
+              layout="constrained"
+              src="../../assets/nginx-v1.svg"
+            />
           </div>
         </div>
 

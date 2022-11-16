@@ -1,5 +1,5 @@
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import carbonad from "../../assets/carbonad-v1.png";
 
 type Props = { className?: string };
 
@@ -8,10 +8,13 @@ export default function BuyMeaCoffe({ className }: Props) {
     <div className={`${className}`}>
       <div className="flex gap-4 justify-center items-center flex-col md:flex-row">
         <div>
-          <img
-            className="max-w-[250px] md:max-w-[300px]"
-            src={carbonad}
-            alt=""
+          <StaticImage
+            className="md:max-w-[300px]"
+            src="../../assets/carbonad-v1.png"
+            alt="carbonad"
+            placeholder="blurred"
+            layout="constrained"
+            width={250}
           />
         </div>
         <div>

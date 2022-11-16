@@ -1,5 +1,5 @@
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import aicat from "../../assets/aicat-v1.png";
 
 type Props = {};
 
@@ -22,7 +22,13 @@ export default function ContributedBySection({}: Props) {
             An open source contribution by
           </div>
           <div className="mx-auto md:m-0">
-            <img className="-mt-6" src={aicat} alt="aicat" />
+            <StaticImage
+              className="-mt-6"
+              src="../../assets/aicat-v1.png"
+              alt="aicat"
+              placeholder="blurred"
+              layout="constrained"
+            />
           </div>
         </div>
       </div>
