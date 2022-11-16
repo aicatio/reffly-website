@@ -1,7 +1,12 @@
 import React from "react";
+import FooterBottom from "../footer/footerBottom";
 
 type Props = {};
 
 export default function Footer({}: Props) {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      <FooterBottom />
+    </footer>
+  );
 }

@@ -36,3 +36,7 @@ a {
 .card {
   @apply bg-card-bg shadow-card rounded-md p-8;
 }
+
+img {
+  max-width: 100%;
+}

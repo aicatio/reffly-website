@@ -1,5 +1,10 @@
+import { Link } from "gatsby";
 import React from "react";
+import heroku from "../../assets/heroku-v2.svg";
+import mongodb from "../../assets/mongodb-v1.svg";
+import nginx from "../../assets/nginx-v1.svg";
 import nicechartjs from "../../assets/nicechartjs-v1.png";
+import nodejs from "../../assets/nodejs-v2.svg";
 import refflyplusLogo from "../../assets/refflyplus-logo-v1.svg";
 
 type Props = {};
@@ -28,8 +33,39 @@ export default function EnterPriceDetails({}: Props) {
                 or Try <b>reffly plus</b>
               </i>
             </h2>
-            <img className="max-w-[200px] mt-10" src={refflyplusLogo} alt="" />
+            <a href="#">
+              <img
+                className="mt-10 max-w-[200px]"
+                src={refflyplusLogo}
+                alt=""
+              />
+            </a>
           </div>
+        </div>
+
+        {/* technologies */}
+        <h2 className="text-center mt-20 mb-12 text-[1.75rem] text-dark">
+          Play with reffly using freemium technologies,{" "}
+          <Link to="/">learn more ...</Link>
+        </h2>
+
+        <div className="grid grid-cols-4 gap-6">
+          <div className="card border-none shadow-none">
+            <img src={nodejs} alt="nodejs" />
+          </div>
+          <div className="card border-none shadow-none">
+            <img src={mongodb} alt="mongodb" />
+          </div>
+          <div className="card border-none shadow-none">
+            <img src={nginx} alt="nginx" />
+          </div>
+          <div className="card border-none shadow-none">
+            <img src={heroku} alt="heroku" />
+          </div>
+        </div>
+
+        <div className="text-center mt-7">
+          Need help? hire me on <a href="#">Freelancer.com</a>
         </div>
       </div>
     </div>

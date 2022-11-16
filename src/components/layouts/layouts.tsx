@@ -1,4 +1,5 @@
 import React from "react";
+import Banner from "../banner";
 import Footer from "./footer";
 import Header from "./header";
 
@@ -13,6 +14,7 @@ export default function Layout({ children }: Props) {
         Test Mode
       </div>
       <Header />
+      <Banner className="mt-10" />
       {children}
       <Footer />
     </>
